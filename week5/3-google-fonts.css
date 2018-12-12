@@ -1,0 +1,41 @@
+body {
+  font: 16px 'Open Sans', sans-serif;
+  background-color: #c0c0c0;
+  margin: 1em;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #fff;
+}
+
+.header {
+  background-color: #c0392b;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.header h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  color: white;
+}
+
+.content {
+  margin-top: 1em;
+  padding: 1em;
+  background-color: #dad3d3;
+}
+
+.content h2 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+.content p:last-child {
+  margin-bottom: 0;
+}

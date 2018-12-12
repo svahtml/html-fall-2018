@@ -1,0 +1,47 @@
+body {
+  font: 18px arial;
+  color: #262626;
+}
+
+ol li {
+  line-height: 1.5em;
+}
+
+code {
+  color: lightgoldenrodyellow;
+  background-color: goldenrod;
+}
+
+div {
+  /* 
+  border-style: solid;
+  border-color: aquamarine;
+  border-width: 10px;
+   */
+  border: 10px solid goldenrod;
+  /* border: solid goldenrod 10px; */
+}
+
+.box2 {
+  border-color: yellowgreen;
+  border-right-color: aqua;
+  border-left: 20px solid salmon;
+}
+
+.hero {
+  border: 5px solid black;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.title {
+  border-bottom: 1px solid slateblue;
+}
+
+ul li {
+  border-bottom: 1px solid black;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}

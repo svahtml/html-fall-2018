@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex Layout - 2 column</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      min-height: 100%;
+    }
+    
+    body {
+      font: 16px arial;
+      background-color: #c0c0c0;
+      margin: 0;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: aquamarine;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: darkred;
+      color: white;
+      height: 100px;
+      font-size: 3em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .row {
+      background-color: blueviolet;
+      display: flex;
+      flex: 1;
+    }
+
+    nav {
+      background-color: darkorange;
+      flex: 0 0 30%;
+    }
+
+    article {
+      background-color: white;
+      flex: 1;
+      padding: 1em;
+    }
+
+    footer {
+      background-color: darkgreen;
+      color: white;
+      height: 75px;
+    }
+  </style>
+</head>
+<body>
+
+<main>
+  <header>Header</header>
+  <section class="row">
+    <nav>Navigation</nav>
+    <article>Content</article>
+  </section>
+  <footer>Footer</footer>
+</main>
+
+</body>
+</html>

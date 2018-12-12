@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Functions</h1>
+
+  <button onclick="logName('Button Hahn')">Click Here</button>
+
+  <script>
+    function logName(name) {
+      console.log(name);
+    }
+
+    logName("Dan Hahn");
+    logName("Stan Hahn");
+
+    // conditional statments
+
+    var hour = 9;
+    var realHour = new Date().getHours() - 12;
+
+    if (hour === realHour) {
+      console.log('class is almost done');
+    } else {
+      console.log('lets keep learning');
+    }
+
+    var a = 100;
+    var value;
+    if (a === 100) {
+      value = "A is 100";
+    } else {
+      value = "A is not 100";
+    }
+
+    console.log(value);
+
+    // function return value;
+
+    function addNumbers(value1, value2) {
+      var calcTotal = value1 + value2;
+      return calcTotal;
+    }
+
+    var total = addNumbers(20, 31);
+
+    var outputSting = `The total is ${total}`;
+    console.log(outputSting);
+
+    // arrow function =>
+    function test() {
+      console.log('simle');
+      return "smile";
+    }
+    const add = (a, b) => a + b;
+
+  </script>
+
+</body>
+</html>

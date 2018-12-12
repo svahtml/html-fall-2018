@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tables</title>
+
+  <style>
+    body {
+      font: 16px arial;
+      background-color: #c0c0c0;
+    }
+
+    .chart {
+      border: 1px solid gray;
+      border-collapse: collapse;
+      background-color: #ffffff;
+    }
+
+    .chart th, 
+    .chart td {
+      padding: 1em;
+      border-bottom: 1px solid gray;
+    }
+
+    .chart th {
+      background-color: #000000;
+      color: #ffffff;
+      text-align: left;
+    }
+
+    .city {
+      width: 150px;
+    }
+
+    .total {
+      width: 40px;
+      text-align: right;
+    }
+
+    .year {
+      width: 100px;
+      text-align: center;
+    }
+  </style>
+
+</head>
+<body>
+<h1>Snow Fall Totals</h1>
+<table class="chart">
+  <tr>
+    <th class="city">City</th>
+    <th class="total">Total</th>
+    <th class="year">Year</th>
+  </tr>
+  <tr>
+    <td class="city">New York</td>
+    <td class="total">46</td>
+    <td class="year">2014</td>
+  </tr>
+  <tr>
+    <td class="city">Boston</td>
+    <td class="total">73</td>
+    <td class="year">1974</td>
+  </tr>
+  <tr>
+    <td class="city">Washington DC</td>
+    <td class="total">12</td>
+    <td class="year">1891</td>
+  </tr>
+  <tr>
+    <td class="city">Syracuse</td>
+    <td class="total">144</td>
+    <td class="year">1994</td>
+  </tr>
+</table>
+</body>
+</html>

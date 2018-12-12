@@ -1,0 +1,53 @@
+body {
+  font: 16px arial;
+  background: url(images/site.jpg) no-repeat center;
+  background-size: cover;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: rgba(255,255,255,.5);
+  box-shadow: 0 2px 10px rgba(0,0,0,.5);
+}
+
+.background {
+  height: 400px;
+  border: 1px solid black;
+}
+
+.bg-example {
+  background-color: #ffccee;
+  background-image: url(images/tile-back.png);
+  background-repeat: repeat;
+  background-position: center 25px;
+  /*background-attachment: fixed;*/
+  background: url(images/tile-back.png) no-repeat center 25px deeppink;
+}
+
+.bg-multi {
+  height: 250px;
+  background:
+    url(images/sheep.png) no-repeat 640px 120px,
+    url(images/sky.png);
+  transition: all 3s;
+}
+
+.bg-multi:hover {
+  background-position: 100px 120px, 0 0;
+}
+
+.list-style {
+  list-style-image: url(images/heart.png);
+}
+
+.bg-size {
+  /*background: url(images/sky.png);
+  background-size: cover;*/
+  background-image: linear-gradient(to right, red, white, blue);
+}

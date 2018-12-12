@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px arial;
+  background-color: #c0c0c0;
+}
+
+main {
+  width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #fff;
+}
+
+code {
+  background-color: #f8bbd0;
+  padding: 1px 6px;
+  border-radius: 5px;
+  color: #e91e63;
+}
+
+.blue {
+  color: blue;
+}
+
+.purple {
+  color: purple;
+}
+
+.red {
+  color: red;
+}
+
+.no-style {
+  
+}
+
+a.example {
+  color: darkcyan;
+  text-decoration: none;
+}
+
+a.example:link {
+  color: yellowgreen;
+}
+
+a.example:visited {
+  color: darkgreen;
+}
+
+a.example:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+a.example:active {
+  color: orangered;
+}
+
+.hover-box {
+  border: 3px solid silver;
+  padding: 2em;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: all 1s;
+}
+
+.hover-box:hover {
+  background-color: lightpink;
+  border-color: deeppink;
+}
+
+.focus-example {
+  outline: none;
+  border: 2px solid gray;
+  padding: .5em;
+  font-size: 1.5em;
+  border-radius: 10px;
+  width: 300px;
+  transition: all .5s ease-in-out;
+}
+
+.focus-example:focus {
+  width: 100%;
+  border-color: lightblue;
+  
+}
+
+.focus-example:hover {
+  background-color: lightgray;
+}

@@ -1,0 +1,106 @@
+body {
+  font: 16px arial;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+pre {
+  font-size: 1em;
+  padding: 1em;
+  background-color: #2D2D2D;
+  color: #BDC3C7;
+  white-space: pre-wrap;
+}
+code {
+  font-size: 1em;
+}
+
+.flex {
+  background-color: #C0392B;
+  padding: 1em;
+  display: flex;
+}
+
+.child {
+  background-color: #F8C555;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+/* Parent */
+
+.flex-direction {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content {
+  /*flex-direction: column;*/
+  justify-content: space-between;
+}
+
+.align-items {
+  height: 400px;
+  align-items: center;
+}
+
+.align-content {
+  flex-wrap: wrap;
+  height: 300px;
+  align-content: space-between;
+}
+
+/* Child */
+
+.set-flex {
+  display: flex;
+}
+
+.order {
+  order: 1;
+}
+
+.flex-grow-parent .child {
+  background-color: lightblue;
+  flex-grow: 1;
+}
+
+.flex-grow-parent .flex-grow {
+  flex-grow: 10;
+}
+
+.flex-shrink-parent .child {
+  flex-shrink: 1;
+  flex-basis: 300px;
+  box-sizing: border-box;
+}
+
+.flex-shrink-parent .flex-shrink {
+  flex-shrink: 2;
+}
+
+.flex-basis-parent .child {
+  flex-basis: 200px;
+}
+
+.flex-basis-parent .flex-basis {
+  flex-basis: 300px
+}
+
+.flex-child {
+  flex: 1;
+}
+
+.align-self-parent {
+  height: 200px
+}
+
+.align-self {
+  align-self: flex-end;
+}

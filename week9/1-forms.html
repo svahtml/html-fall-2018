@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms</title>
+  <link rel="stylesheet" href="css/1-forms.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+  <style>
+    label.line {
+      display: block;
+      margin: .5em 0;
+      font-weight: bold;
+    }
+    input.long {
+      border: 3px solid lightgray;
+      padding: .5em;
+      border-radius: 5px;
+      width: 300px;
+      outline: none;
+      font-size: 1em;
+    }
+
+    input:focus {
+      border-color: lightgreen;
+    }
+
+    textarea {
+      border: 3px solid lightgray;
+      padding: .5em;
+      width: 300px;
+      height: 150px;
+      display: block;
+      outline: none;
+      font-size: 1em;
+    }
+
+    textarea:focus {
+      border-color: lightgreen;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrapper">
+    <header>
+      <h1>Forms</h1>
+    </header>
+    <div class="content-area">
+      <form action="https://www.svahtml.com/forms/example.php" method="get">
+        <h2>Login</h2>
+        <!-- text -->
+        <label for="fristName" class="line">First Name</label>
+        <input type="text" name="first-name" id="fristName" class="long"><br>
+        <!-- password -->
+        <label for="myPassword" class="line">Password</label> 
+        <input type="password" name="last-name" id="myPassword" class="long"><br>
+        <!-- email -->
+        <label for="email" class="line">Email</label>
+        <input type="email" id="email" name="email" class="long">
+
+        <h2>Select Color</h2>
+        <!-- radio -->
+        <input type="radio" name="pizza" value="red" id="red">
+        <label for="red">Red</label>
+        
+        <input type="radio" name="pizza" value="green" id="green">
+        <label for="green">Green</label>
+        
+        <input type="radio" name="pizza" value="blue" id="blue">
+        <label for="blue">Blue</label>
+
+        <h2>Pick Toppings</h2>
+        <!-- checkbox -->
+        <label for="cheese">Cheese</label>
+        <input type="checkbox" name="topping" value="cheese" id="cheese">
+        
+        <label for="pepperoni">Pepperoni</label>
+        <input type="checkbox" name="topping" value="pepperoni" id="pepperoni">
+        
+        <label for="sausage">Sausage</label>
+        <input type="checkbox" name="topping" value="sausage" id="sausage">
+
+        
+
+        <h2>Select Car</h2>
+        <!-- select -->
+        <select name="car-type">
+          <option value="ford">Ford</option>
+          <option value="chevy">Chevy</option>
+          <option value="dodge">Dodge</option>
+        <select>
+
+        <h2>Write Message</h2>
+        <!-- textarea -->
+        <textarea name="msg"></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+  </main>
+
+
+</body>
+
+</html>
